@@ -1,42 +1,125 @@
 import * as React from "react"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
+import Container from '@mui/material/Container';
+import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const pages = ['BIOGRAPHY', 'BOOKS', 'MEDIA', 'CONTACT'];
+const hardTrim = str => str.trim().toLowerCase().replace(/[^a-z0-9]/gi, '');
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Header = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+  return (
+    <AppBar header position="static"
+    style={{ background: 'transparent', boxShadow: 'none'}}>
+      <Container maxWidth="lg">
+        <Toolbar disableGutters 
+        sx={{display: 'flex', justifyContent: 'center'}}>
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            className="nav-link"
+          >
+            AH
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              <MenuItem>
+                <Link 
+                  to="/" onClick={handleCloseNavMenu}
+                  style={{textDecoration: 'none'}} className="nav-link">
+                  Home
+                </Link>
+              </MenuItem>
+              {pages.map((page) => (
+                <MenuItem key={page}>
+                  <Link 
+                    to={`/${hardTrim(page)}/`}
+                    onClick={handleCloseNavMenu}
+                    style={{textDecoration: 'none'}} className="nav-link">
+                    {page}
+                  </Link>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+          >
+            LOGO
+          </Typography>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <Link 
+              to="/" onClick={handleCloseNavMenu}>
+              <Button sx={{ my: 2, color: 'white', display: 'block' }} className="nav-link">Home</Button>
+            </Link>
+            {pages.map((page) => (
+              <Link 
+                to={`/${hardTrim(page)}/`} key={page}
+                onClick={handleCloseNavMenu}>
+                <Button sx={{ my: 2, color: 'white', display: 'block' }} className="nav-link">{page}</Button>
+              </Link>
+            ))}
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  )}
+
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header
