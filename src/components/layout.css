@@ -4,20 +4,54 @@
   --main-gray-blue: #364f6b;
   --main-light-gray: #D8CFD0;
   --main-black-olive: #413F3D;
+  --main-text-color: #747474;
 }
 html {
   margin: 0;
 }
 body {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 16px;
   margin: 0;
   background-color: var(--main-isabelline);
   color: var(--main-black-olive);
 }
 header a {
   text-decoration: none !important;
-  color: var(--main-black-olive) !important;
+  color: var(--main-black-olive);
 }
-header, .nav-link {
-  color: var(--main-black-olive) !important;
+
+.about-sec-01 p {
+  line-height: 2rem;
+}
+.active-link {
+  color: var(--main-gray-blue) !important;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.underline > div {
+  border-bottom: 4px solid var(--main-light-gray);
+  max-width: 200px;
+  width: 50%;
+}
+.text-gray-blue {
+  color: var(--main-gray-blue);
+}
+.text {
+  color: var(--main-text-color);
+}
+.hero {
+  min-height: 500px;
+}
+
+/* Biography Page */
+.biography-hero {
+  background-image: url('../images/feather.webp');
+  background-size: cover;
+  background-position: bottom;
+}
+.awards .list-group-item {
+  background-color: transparent;
+  color: var(--main-text-color);
 }
