@@ -5,7 +5,6 @@ import { Container, Navbar, Nav, Row } from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({siteTitle}) => {
-
   return (
     <header>
       <Container className="pt-3">
