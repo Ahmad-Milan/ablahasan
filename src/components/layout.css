@@ -74,3 +74,6 @@ header a {
   background-color: var(--main-light-gray);
   min-height: 394px;
 }
+.book-reviews .gatsby-image-wrapper img {
+  border-radius: 50%;
+}
