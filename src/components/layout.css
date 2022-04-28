@@ -43,15 +43,33 @@ header a {
 }
 .hero {
   min-height: 500px;
+  background-size: cover;
 }
-
+.basic-btn, .basic-btn:hover, .basic-btn:focus {
+  max-width: 250px;
+  background-color: var(--main-gray-blue);
+  border-color: var(--main-gray-blue);
+}
+.gradient-up {
+  height: 130px;
+  background-image: linear-gradient(to top, var(--main-isabelline), transparent);
+  bottom: 40px;
+}
 /* Biography Page */
 .biography-hero {
-  background-image: url('../images/feather.webp');
-  background-size: cover;
+  background-image: url('../images/backgrounds/feather.webp');
   background-position: bottom;
 }
 .awards .list-group-item {
   background-color: transparent;
   color: var(--main-text-color);
+}
+/* Books Page */
+.books-hero {
+  background-image: url('../images/backgrounds/books-stack-bg.webp');
+  background-position: bottom;
+}
+.book-reviews {
+  background-color: var(--main-light-gray);
+  min-height: 394px;
 }
