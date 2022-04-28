@@ -52,7 +52,7 @@ function Books() {
         <h5 className="text-center mt-4 h2 fw-light">Book Description</h5>
         <Col>
           <p className="text"><i>Driven by a detailed hermeneutical investigation of the Qur'anic story of creation, this book questions the hybrid Biblical/Qur'anic narrative that gradually erased the lines that define the authentic Qur'anic account. Abla Hasan argues that humanity's divine status is the bedrock from which to investigate the meaning of human religiosity and address the problem of pain and suffering. The detailed analysis in this book answers many linguistic and logical pending questions in the Qur'an and is a serious departure from popular Muslim narratives that seek to alleviate our pain and suffering.</i></p>
-        </Col>
+        </Col> 
       </Row>
       <Row>
         <h5 className="text-center mt-4 h2 fw-light">Book Reviews</h5>
