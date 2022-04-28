@@ -52,7 +52,8 @@ header a {
 }
 .gradient-up {
   height: 130px;
-  background-image: linear-gradient(to top, var(--main-isabelline), transparent);
+  background-image: linear-gradient(to bottom, #F2F1EF, rgba(242, 241, 239, .5));
+  background: -webkit-linear-gradient(bottom, #F2F1EF, rgba(242, 241, 239, .5));
   bottom: 40px;
 }
 /* Biography Page */
