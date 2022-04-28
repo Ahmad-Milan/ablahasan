@@ -4,7 +4,8 @@ import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import { Container, Row, Col } from "react-bootstrap"
 import Underline from '../components/shared/Underline'
-import Awards from '../components/Awards'
+import Awards from '../components/about/Awards'
+import Education from '../components/about/Education'
 
 function AboutPage() {
   return (
@@ -15,7 +16,7 @@ function AboutPage() {
           <Row>
             <Col>
               <h1 className="fw-normal display-4 text-gray-blue">ABOUT</h1>
-              <h2 className="fw-normal mb-5 text-gray-blue">Porfessor Abla Hasan</h2>
+              <h2 className="fw-normal mb-5 pb-md-2 text-gray-blue">Porfessor Abla Hasan</h2>
             </Col>
           </Row>
         </Container>
@@ -47,9 +48,8 @@ function AboutPage() {
           <p className="lh-lg fs-20 text">A teacher, a researcher and a public speaker. In addition to teaching for Nebraska University, Hasan’s course “Women in the Qur’an” was offered to Maryland University, Rutgers University, Penn State University (Though DISC) and to Nizwa University in Oman (through Nebraska’s Global Virtual Project). Dr. Hasan’s scholar engagement includes numerous national and international paper presentations including 50 invited talks and more than 40 media interviews and citations. </p>
         </Row>
       </Container>
-
+      <Education />
       <Awards />
-
     </Layout>
   )
 }
