@@ -56,6 +56,15 @@ header a {
   background: -webkit-linear-gradient(bottom, #F2F1EF, rgba(242, 241, 239, .5));
   bottom: 40px;
 }
+.card {
+  background-color: var(--main-light-gray);
+  border: none;
+  overflow: hidden;
+  min-height: 446px;
+}
+.card .card-title {
+  color: var(--main-gray-blue);
+}
 /* Biography Page */
 .biography-hero {
   background-image: url('../images/backgrounds/feather.webp');
@@ -76,4 +85,10 @@ header a {
 }
 .book-reviews .gatsby-image-wrapper img {
   border-radius: 50%;
+}
+
+/* Media Page */
+.media-hero {
+  background-image: url('../images/backgrounds/media-hero-bg.webp');
+  background-position: top;
 }
