@@ -1,14 +1,11 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { Container, Row, Col, Carousel } from "react-bootstrap"
-import Underline from '../../components/shared/Underline'
 
 function Books() {
   return (
     <>
     <Container>
-      <h3 className="mb-0 display-6 text-gray-blue">Books</h3>
-      <Underline />
       <Row className="pt-4">
         <Col md={6} lg={5}>
         <figure className="text-center">
