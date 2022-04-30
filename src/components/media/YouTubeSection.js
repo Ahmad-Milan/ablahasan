@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import YouTube from "react-youtube"
-import { Col, Container, Row, Card } from 'react-bootstrap'
+import { Col, Container, Row, Card, Pagination } from 'react-bootstrap'
 import Underline from '../shared/Underline'
 
 function YouTubeSection() {
@@ -20,21 +20,41 @@ function YouTubeSection() {
     }
   `)
 
-  console.log(youtubeData.allYoutubeVideo.edges)
+  const allVideos = youtubeData.allYoutubeVideo.edges
+  const pagesCount = Math.ceil(allVideos.length / 6)
+  const [pageToDisplay, setPageToDisplay] = useState(1)
+  const [collection, setCollection] = useState(allVideos.slice(0, 6))
 
   const opts = {
     height: '280',
     width: '400'
   };
 
+  let items = [];
+  for (let number = 1; number <= pagesCount; number++) {
+    items.push(
+      <Pagination.Item 
+        key={number} active={number === pageToDisplay} 
+        onClick={() => handleClick(number)}>
+        {number}
+      </Pagination.Item>,
+    );
+  }
+console.log('Helo')
+  const handleClick = number =>{
+    setCollection(allVideos.slice(6 * (number - 1) , 6 * number))
+    setPageToDisplay(number)
+  }
+
   return (
     <Container>
       <h2 className="mb-0 display-5 text-gray-blue">YouTube</h2>
       <Underline />
+      <Pagination>{items}</Pagination>
       <Row>
         {
-          youtubeData.allYoutubeVideo.edges.map((video, x) => (
-            <Col md={6} lg={4} className="mb-3">
+          collection.map(video => (
+            <Col key={video.node.videoId} md={6} lg={4} className="mb-3">
               <Card className="shadow-sm">
                 <YouTube videoId={video.node.videoId} opts={opts} className="text-center mw-100" iframeClassName="w-100"  />
                 <Card.Body>
@@ -48,6 +68,7 @@ function YouTubeSection() {
           ))
         }
       </Row>
+      <Pagination>{items}</Pagination>
     </Container>
   )
 }
