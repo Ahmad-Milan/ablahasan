@@ -23,6 +23,7 @@ function YouTubeSection() {
   const allVideos = youtubeData.allYoutubeVideo.edges
   const pagesCount = Math.ceil(allVideos.length / 6)
   const [pageToDisplay, setPageToDisplay] = useState(1)
+  // Display the first 6 videos initially
   const [collection, setCollection] = useState(allVideos.slice(0, 6))
 
   const opts = {
@@ -40,7 +41,6 @@ function YouTubeSection() {
       </Pagination.Item>,
     );
   }
-console.log('Helo')
   const handleClick = number =>{
     setCollection(allVideos.slice(6 * (number - 1) , 6 * number))
     setPageToDisplay(number)
@@ -51,7 +51,7 @@ console.log('Helo')
       <h2 className="mb-0 display-5 text-gray-blue">YouTube</h2>
       <Underline />
       <Pagination>{items}</Pagination>
-      <Row>
+      <Row className="justify-content-center">
         {
           collection.map(video => (
             <Col key={video.node.videoId} md={6} lg={4} className="mb-3">
