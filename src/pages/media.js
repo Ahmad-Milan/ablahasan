@@ -3,6 +3,8 @@ import YouTubeSection from '../components/media/YouTubeSection'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
+import Articles from "../components/media/Articles"
+import Podcasts from "../components/media/Podcasts"
 
 
 const MediaPage = () => {
@@ -19,6 +21,8 @@ const MediaPage = () => {
         </Container>
       </section>
       <YouTubeSection />
+      <Articles />
+      <Podcasts />
     </Layout>
   )
 }
