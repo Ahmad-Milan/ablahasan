@@ -92,3 +92,11 @@ header a {
   background-image: url('../images/backgrounds/media-hero-bg.webp');
   background-position: top;
 }
+.page-link {
+  color: var(--main-black-olive);
+}
+.page-item.active .page-link {
+  background-color: var(--main-gray-blue);
+  border-color: var(--main-gray-blue);
+  color: var(--main-isabelline);
+}
