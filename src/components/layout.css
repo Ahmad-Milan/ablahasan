@@ -100,3 +100,12 @@ header a {
   border-color: var(--main-gray-blue);
   color: var(--main-isabelline);
 }
+#articles .card figure {
+  max-height: 220px;
+}
+#articles .card{
+  min-height: 405px;
+}
+#podcasts .card{
+  min-height: 425px;
+}
