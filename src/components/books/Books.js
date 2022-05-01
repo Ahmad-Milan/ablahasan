@@ -121,8 +121,7 @@ function Books() {
               </Col>
               <Col md={6} lg={8}>
                 <div className="d-flex flex-column justify-content-center h-100">
-                  <blockquote className="text">"This book is a serious approach to interpreting key verses in the Qur’an, as opposed to the classical “he said, she said” traditions. Any serious scholarship to understand religious scriptures must have three components: scientific rigor, focus on the scripture itself, and a heavy dose of courage."</blockquote>
-                  <blockquote className="text mb-0">"Irrespective of whether one agrees with her arguments, Dr. Hasan has adhered to these three important principles, thus presenting logical arguments to support her theses. Dr. Hasan’s approach will have a profound impact on interpreting other parts of the Qur’an. Her scholarship will most likely accelerate the ever-growing movement to reconsider traditional Qur’an exegeses."</blockquote>
+                  <blockquote className="text mb-0">"This book is a serious approach to interpreting key verses in the Qur’an, as opposed to the classical “he said, she said” traditions. Any serious scholarship to understand religious scriptures must have three components: scientific rigor, focus on the scripture itself, and a heavy dose of courage irrespective of whether one agrees with her arguments, Dr. Hasan has adhered to these three important principles, thus presenting logical arguments to support her theses. Dr. Hasan’s approach will have a profound impact on interpreting other parts of the Qur’an. Her scholarship will most likely accelerate the ever-growing movement to reconsider traditional Qur’an exegeses."</blockquote>
                 </div>
               </Col>
             </Row>
@@ -229,6 +228,29 @@ function Books() {
       <Row>
         <h5 className="text-center mt-4 h2 fw-light">Book Reviews</h5>
         <Carousel fade className="book-reviews border py-5 mt-3 rounded shadow-sm">
+        <Carousel.Item>
+            <Row className="justify-content-center">
+              <Col md={4} lg={2}>
+                <figure className="text-center">
+                  <StaticImage
+                    src="../../images/books/Edward-Becker.webp"
+                    width={150}
+                    quality={95}
+                    formats={["auto", "webp"]}
+                    alt="Dr. Edward Becker"
+                    className="rounded-circle mb-3"
+                  />
+                  <figcaption>Dr. Edward Becker</figcaption>
+                  <figcaption><small>University of Nebraska</small></figcaption>
+                </figure>
+              </Col>
+              <Col md={6} lg={8}>
+                <div className="d-flex flex-column justify-content-center h-100">
+                  <blockquote className="text">"Islam and Its holy book, the Qur’an, have traditionally been interpreted as being at odds with the egalitarian ideals of feminism. This book argues that, to the contrary, The Qur’an affirms the equal rights and equal values of men and women."</blockquote>
+                </div>
+              </Col>
+            </Row>
+          </Carousel.Item>
           <Carousel.Item>
             <Row className="justify-content-center">
               <Col md={4} lg={2}>
