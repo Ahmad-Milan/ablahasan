@@ -85,7 +85,7 @@ function Articles() {
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
                 <StaticImage
-                  src="../../images/media/Hastings-church.png"
+                  src="../../images/media/hastings-church.webp"
                   quality={95}
                   formats={["auto", "webp"]}
                   alt="Hastings church hopes to bridge gap in religious divide"
