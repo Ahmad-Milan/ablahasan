@@ -29,7 +29,7 @@ function Podcasts() {
               <Card.Body>
                 <Card.Title>Standing on Points: A Cultural History of Punctuation</Card.Title>
                 <Card.Text className="text">
-                An interview with Dr. Florence Hazrat (University of Sheffield) in Standing on Points: A Cultural History of Punctuation podcast. July 29, 2021.
+                  An interview with Dr. Florence Hazrat (University of Sheffield) in Standing on Points: A Cultural History of Punctuation podcast. July 29, 2021.
                 </Card.Text>
               </Card.Body>
             </Card>
