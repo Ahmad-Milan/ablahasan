@@ -2,8 +2,11 @@ import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { Col, Container, Row, Card } from 'react-bootstrap'
 import Underline from '../shared/Underline'
+import ReactAudioPlayer from 'react-audio-player';
+import sound from '../../static/Reading-the-Quran-as-a-woman.m4a'
 
 function Podcasts() {
+
   return (
     <Container id="podcasts" className="mt-5 pt-md-4">
       <h2 className="mb-0 display-5 text-gray-blue">Podcasts</h2>
@@ -15,7 +18,7 @@ function Podcasts() {
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
                 <StaticImage
-                  src="../../images/media/Standing-on-Points.jpg"
+                  src="../../images/media/Standing-on-Points.webp"
                   height={265}
                   quality={95}
                   formats={["auto", "webp"]}
@@ -39,7 +42,7 @@ function Podcasts() {
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
                 <StaticImage
-                  src="../../images/media/Podcast-2.png"
+                  src="../../images/media/Podcast-2.webp"
                   height={265}
                   quality={95}
                   formats={["auto", "webp"]}
@@ -55,6 +58,27 @@ function Podcasts() {
               </Card.Body>
             </Card>
           </a>
+        </Col>
+        <Col md={6} lg={4} className="mb-3">
+            <Card className="shadow-sm">
+              <figure className="text-center mb-0 overflow-hidden position-relative">
+                <StaticImage
+                  src="../../images/media/quran.webp"
+                  height={265}
+                  quality={95}
+                  formats={["auto", "webp"]}
+                  alt="Decoding the Egalitarianism of the Qur’an Podcast"
+                  className="shadow-sm rounded w-100"
+                />
+                <ReactAudioPlayer src={sound} controls className="position-absolute top-50 start-50 translate-middle" />
+              </figure>
+              <Card.Body>
+                <Card.Title>What does it mean to read the Qur’an as a woman?</Card.Title>
+                <Card.Text className="text">
+                Dr.Joud Alkorani. <br /> Radboud University – Nijmegen – The Netherlands. <br /> April 28, 2022
+                </Card.Text>
+              </Card.Body>
+            </Card>
         </Col>
       </Row>
     </Container>
