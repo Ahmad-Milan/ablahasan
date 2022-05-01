@@ -2,8 +2,7 @@ import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { Col, Container, Row, Card } from 'react-bootstrap'
 import Underline from '../shared/Underline'
-import ReactAudioPlayer from 'react-audio-player';
-import sound from '../../static/Reading-the-Quran-as-a-woman.m4a'
+// import ReactAudioPlayer from 'react-audio-player';
 
 function Podcasts() {
 
@@ -59,7 +58,7 @@ function Podcasts() {
             </Card>
           </a>
         </Col>
-        <Col md={6} lg={4} className="mb-3">
+        {/* <Col md={6} lg={4} className="mb-3">
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden position-relative">
                 <StaticImage
@@ -75,11 +74,11 @@ function Podcasts() {
               <Card.Body>
                 <Card.Title>What does it mean to read the Qur’an as a woman?</Card.Title>
                 <Card.Text className="text">
-                Dr.Joud Alkorani. <br /> Radboud University – Nijmegen – The Netherlands. <br /> April 28, 2022
+                Dr. Joud Alkorani <br /> Radboud University – Nijmegen – The Netherlands <br /> April 28, 2022
                 </Card.Text>
               </Card.Body>
             </Card>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   )
