@@ -58,9 +58,11 @@ function Podcasts() {
             </Card>
           </a>
         </Col>
-        {/* <Col md={6} lg={4} className="mb-3">
+        <Col md={6} lg={4} className="mb-3">
+          <a href="https://anchor.fm/ahmad-saleh947/episodes/What-does-it-mean-to-read-the-Quran-as-a-woman-e1hucur" 
+              rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
-              <figure className="text-center mb-0 overflow-hidden position-relative">
+              <figure className="text-center mb-0 overflow-hidden">
                 <StaticImage
                   src="../../images/media/quran.webp"
                   height={265}
@@ -69,7 +71,6 @@ function Podcasts() {
                   alt="Decoding the Egalitarianism of the Qur’an Podcast"
                   className="shadow-sm rounded w-100"
                 />
-                <ReactAudioPlayer src={sound} controls className="position-absolute top-50 start-50 translate-middle" />
               </figure>
               <Card.Body>
                 <Card.Title>What does it mean to read the Qur’an as a woman?</Card.Title>
@@ -78,7 +79,8 @@ function Podcasts() {
                 </Card.Text>
               </Card.Body>
             </Card>
-        </Col> */}
+          </a>
+        </Col>
       </Row>
     </Container>
   )
