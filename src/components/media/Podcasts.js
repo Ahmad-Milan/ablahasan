@@ -58,7 +58,7 @@ function Podcasts() {
             </Card>
           </a>
         </Col>
-        <Col md={6} lg={4} className="mb-3">
+        {/* <Col md={6} lg={4} className="mb-3">
           <a href="https://anchor.fm/ahmad-saleh947/episodes/What-does-it-mean-to-read-the-Quran-as-a-woman-e1hucur" 
               rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
@@ -80,7 +80,7 @@ function Podcasts() {
               </Card.Body>
             </Card>
           </a>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   )
