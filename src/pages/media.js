@@ -1,10 +1,11 @@
 import * as React from "react"
-import YouTubeSection from '../components/media/YouTubeSection'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
+import YouTubeChannel from "../components/media/YouTubeChannel"
 import Articles from "../components/media/Articles"
 import Podcasts from "../components/media/Podcasts"
+import Playlist from "../components/media/Playlist"
 
 
 const MediaPage = () => {
@@ -20,7 +21,8 @@ const MediaPage = () => {
           </Row>
         </Container>
       </section>
-      <YouTubeSection />
+      <Playlist />
+      <YouTubeChannel />
       <Articles />
       <Podcasts />
     </Layout>
