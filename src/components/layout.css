@@ -108,3 +108,14 @@ header a {
 #podcasts .card{
   min-height: 425px;
 }
+
+/* Gallery Page */
+.gallery-hero {
+  background-image: url('../images/backgrounds/film-negative.webp');
+  background-color: var(--main-isabelline);
+  background-position: bottom;
+  background-blend-mode: multiply;
+}
+#gallery figure {
+  max-height: 300px;
+}
