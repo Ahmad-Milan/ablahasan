@@ -25,7 +25,6 @@ function Gallery() {
     }
   `).allFile.edges
 
-console.log(localImagesData)
   return (
     <Container id="gallery">
       {
