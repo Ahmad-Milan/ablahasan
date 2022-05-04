@@ -140,6 +140,6 @@ header a {
   width: 3rem;
   height: 3rem;
 }
-#gallery-modal .gatsby-image-wrapper > div img{
+#gallery-modal .gatsby-image-wrapper img{
   max-height: 600px;
 }
