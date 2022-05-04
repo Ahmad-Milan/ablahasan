@@ -141,7 +141,7 @@ header a {
   background-color: var(--main-isabelline);
   color: var(--main-gray-blue);
 }
-#gallery-modal .carousel-control-next-icon, .carousel-control-prev-icon{
+#gallery-modal .carousel-control-next-icon, #gallery-modal .carousel-control-prev-icon{
   background-color: var(--main-black-olive);
   width: 3rem;
   height: 3rem;
