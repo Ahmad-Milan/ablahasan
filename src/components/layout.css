@@ -49,6 +49,12 @@ header a {
   max-width: 250px;
   background-color: var(--main-gray-blue);
   border-color: var(--main-gray-blue);
+  color: var(--main-isabelline);
+}
+.basic-btn:disabled {
+  cursor: not-allowed;
+  color: var(--main-light-gray);
+  opacity: .8;
 }
 .gradient-up {
   height: 130px;
@@ -142,4 +148,25 @@ header a {
 }
 #gallery-modal .gatsby-image-wrapper img{
   max-height: 600px;
+}
+
+/* Contact Page */
+.contact-hero {
+  background-image: url('../images/Abla-Hasan-03.webp');  /* fallback */
+  background-color: var(--main-isabelline);
+  background-position: top right;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/Abla-Hasan-03.webp'), linear-gradient(to top right, #F2F1EF, rgba(54, 79, 107, .4), rgba(54, 79, 107, .5));
+}
+#contact-form h1, #contact-form .success p, form label {
+  color: var(--main-isabelline);
+}
+form label sup svg {
+  font-size: 8px;
+  color: red;
+}
+#contact-form .card {
+  background-color: rgba(54, 79, 107, .8);
 }
