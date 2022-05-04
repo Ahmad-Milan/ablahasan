@@ -20,6 +20,7 @@ function Gallery() {
                 placeholder: BLURRED
                 webpOptions: {quality: 90}
                 quality: 90
+                height: 600
               )
             }
             relativePath
@@ -31,6 +32,9 @@ function Gallery() {
 
   const handleDisplayImage = (e, index) => {
     setModalShow(true)
+    setActiveIndex(index)
+  }
+  const updateIndex = index => {
     setActiveIndex(index)
   }
 
@@ -52,7 +56,7 @@ function Gallery() {
           }
         </Row>
       </Container>
-      <GalleryModal show={modalShow} onHide={() => setModalShow(false)} {...{localImagesData, activeIndex}} />
+      <GalleryModal show={modalShow} onHide={() => setModalShow(false)} {...{localImagesData, activeIndex, updateIndex}} />
     </section>
   )
 }
