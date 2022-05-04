@@ -118,4 +118,28 @@ header a {
 }
 #gallery figure {
   max-height: 300px;
+  cursor: pointer;
+}
+#gallery figure .zoom {
+  color: var(--main-isabelline);
+  background-color: rgba(216, 207, 208, .4);
+  left: -100%;
+  bottom: -100%;
+  transition: all .3s ease-in-out;
+}
+#gallery figure:hover > .zoom {
+  left: 0;
+  bottom: 0;
+}
+#gallery-modal .modal-content {
+  background-color: var(--main-isabelline);
+  color: var(--main-gray-blue);
+}
+#gallery-modal .carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: var(--main-black-olive);
+  width: 3rem;
+  height: 3rem;
+}
+#gallery-modal .gatsby-image-wrapper > div img{
+  max-height: 600px;
 }
