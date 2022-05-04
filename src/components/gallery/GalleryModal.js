@@ -7,7 +7,6 @@ function GalleryModal({show, onHide, localImagesData, activeIndex, updateIndex})
   const handleSelect = (selectedIndex, e) => {
     updateIndex(selectedIndex);
   };
-
   return (
     <Modal
       {...{show, onHide}}
