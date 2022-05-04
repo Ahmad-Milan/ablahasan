@@ -45,7 +45,7 @@ function Gallery() {
           {
             localImagesData.map((photo, x) => (
             <Col key={x} md={6} lg={4}>
-              <figure className="overflow-hidden position-relative" onClick={e => handleDisplayImage(e, x)}>
+              <figure className="overflow-hidden position-relative text-center" onClick={e => handleDisplayImage(e, x)}>
                 <GatsbyImage image={getImage(photo.node)} alt="photo gallery" />
                 <span className="position-absolute w-100 h-100 d-flex zoom">
                   <AiOutlineZoomIn className="m-auto display-3" />
