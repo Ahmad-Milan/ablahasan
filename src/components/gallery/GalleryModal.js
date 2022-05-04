@@ -1,17 +1,12 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import { Modal, Carousel } from 'react-bootstrap'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-function GalleryModal({show, onHide, localImagesData, activeIndex}) {
-  const [index, setIndex] = useState(activeIndex);
+function GalleryModal({show, onHide, localImagesData, activeIndex, updateIndex}) {
 
   const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
+    updateIndex(selectedIndex);
   };
-
-  useEffect(() => {
-    setIndex(activeIndex)
-  }, [activeIndex])
 
   return (
     <Modal
@@ -27,7 +22,7 @@ function GalleryModal({show, onHide, localImagesData, activeIndex}) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Carousel activeIndex={index} indicators={false} onSelect={handleSelect}>
+        <Carousel activeIndex={activeIndex} indicators={false} onSelect={handleSelect}>
           {
             localImagesData.map((photo, i) => (
               <Carousel.Item key={i} className="overflow-hidden text-center">
