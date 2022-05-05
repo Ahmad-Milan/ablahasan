@@ -79,7 +79,6 @@ function ContactForm () {
                   style={formik.touched.user_name && formik.errors.user_name ? {borderColor: 'red'} : null} />
                   <ErrorMessage name="user_name" component={TextError} />
               </div>
-
               <div className="row justify-content-center mx-auto pt-3">
                 <label htmlFor="email">Your email <sup><FaAsterisk /></sup></label>
                 <Field
@@ -89,7 +88,6 @@ function ContactForm () {
                 />
                 <ErrorMessage name="user_email" component={TextError} />
               </div>
-
               <div className="row justify-content-center mx-auto pt-3">
                 <label htmlFor="subject">Subject </label>
                 <Field 
@@ -97,19 +95,15 @@ function ContactForm () {
                   style={formik.touched.subject && formik.errors.subject ? {borderColor: 'red'} : null} />
                   <ErrorMessage name="subject" component={TextError} />
               </div>
-
               <div className="row justify-content-center mx-auto pt-3">
                 <label htmlFor="message">Message <sup><FaAsterisk /></sup></label>
                 <Field as="textarea" className="form-control" placeholder="Your message..." id="message" name="message" rows="3"
                   style={formik.touched.message && formik.errors.message ? {borderColor: 'red'} : null}/>
                 <ErrorMessage name="message" component={TextError} />
               </div>
-
               <div className="row justify-content-center mx-auto pt-3">
                 <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY} onChange={onChangeRecaptcha} className="px-0" />
               </div>
-            
-
               <div className="row pt-3">
                 <div className="">
                   <input type="submit" value={submitting ? 'Sending...' : 'SEND MESSAGE'} className='py-2 px-3 shadow-sm form-btn rounded' disabled={!formik.isValid || !recaptchaToken} />
