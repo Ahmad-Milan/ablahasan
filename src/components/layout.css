@@ -76,7 +76,7 @@ header a {
   background-image: url('../images/backgrounds/feather.webp');
   background-position: bottom;
 }
-.awards .list-group-item {
+.awards .list-group-item, .courses .list-group-item {
   background-color: transparent;
   color: var(--main-text-color);
 }
