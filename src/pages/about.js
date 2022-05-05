@@ -4,8 +4,8 @@ import Seo from "../components/seo"
 import AboutHero from '../components/about/AboutHero'
 import Awards from '../components/about/Awards'
 import Education from '../components/about/Education'
-import ArabicProgram from '../components/about/ArabicProgram'
 import Background from '../components/about/Background'
+import Courses from '../components/about/Courses'
 
 function AboutPage() {
   return (
@@ -15,7 +15,7 @@ function AboutPage() {
       <Background />
       <Education />
       <Awards />
-      <ArabicProgram />
+      <Courses />
     </Layout>
   )
 }
