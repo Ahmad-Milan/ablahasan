@@ -147,6 +147,29 @@ function Articles() {
             </Card>
           </a>
         </Col>
+
+        <Col md={6} lg={4} className="mb-3">
+          <a href="https://manlymiles.wordpress.com/2017/03/30/unl-muslim-professor-tells-her-story/" 
+            rel="noreferrer" className="text-decoration-none" target="_blank">
+            <Card className="shadow-sm">
+              <figure className="text-center mb-0 overflow-hidden">
+                <StaticImage
+                  src="../../images/Abla-Hasan-03.webp"
+                  quality={95}
+                  formats={["auto", "webp"]}
+                  alt="The Big Arabic Day"
+                  className="shadow-sm rounded w-100"
+                />
+              </figure>
+              <Card.Body>
+                <Card.Title>UNL Muslim professor tells her story</Card.Title>
+                <Card.Text className="text">
+                As a young Muslim woman in Damascus, Syria, Abla Hasan would walk down the Hamidiah Market, visiting the sweet and carved wood vendors housed in cragged...
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </a>
+        </Col>
       </Row>
     </Container>
   )
