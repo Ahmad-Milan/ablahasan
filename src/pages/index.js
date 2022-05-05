@@ -13,7 +13,8 @@ const IndexPage = () => (
         <Col lg={6}>
           <div className="mb-4">
             <h1 className="display-3 mb-4">Dr. Abla Hasan</h1>
-            <h2 className="display-6 text">Associate Prof of practice of Arabic language and culture </h2>
+            <h2 className="display-6 mb-4 text">Associate Prof of practice of Arabic language and culture </h2>
+            <h3 className="h2 fw-light text">- Nebraska University</h3>
           </div>
         </Col>
         <Col lg={6}>
