@@ -112,7 +112,7 @@ function ContactForm () {
 
               <div className="row pt-3">
                 <div className="">
-                  <input type="submit" value={submitting ? 'Sending...' : 'SEND MESSAGE'} className='py-2 px-3 shadow-sm basic-btn rounded' disabled={!formik.isValid || !recaptchaToken} />
+                  <input type="submit" value={submitting ? 'Sending...' : 'SEND MESSAGE'} className='py-2 px-3 shadow-sm form-btn rounded' disabled={!formik.isValid || !recaptchaToken} />
                 </div>
               </div>
               </>
@@ -122,8 +122,8 @@ function ContactForm () {
               <div className="row justify-content-center mx-auto pt-5">
                 <div className="col-md-6 px-0">
                   <input 
-                    type="button" value={failed ? 'Try Again' : 'Submit Another Request'} 
-                    className='w-100 basic-btn py-2 shadow-sm rounded'
+                    type="button" value={failed ? 'Try Again' : 'Send another message'} 
+                    className='w-100 form-btn py-2 shadow-sm rounded'
                     onClick={restartHandler}/>
                 </div>
               </div>

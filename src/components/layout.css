@@ -170,3 +170,14 @@ form label sup svg {
 #contact-form .card {
   background-color: rgba(54, 79, 107, .8);
 }
+.form-btn, .form-btn:hover, .form-btn:focus {
+  max-width: 250px;
+  background-color: var(--main-isabelline);
+  border-color: var(--main-isabelline);
+  color: var(--main-gray-blue);
+}
+.form-btn:disabled {
+  cursor: not-allowed;
+  opacity: .8;
+  color: var(--main-text-color);
+}
