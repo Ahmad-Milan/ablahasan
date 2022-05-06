@@ -7,7 +7,7 @@ import Seo from "../components/shared/seo"
 
 const ContactPage = () => (
   <Layout>
-    <Seo title="Contact" />
+    <Seo title="Contact" description="Dr. Abla Hasan | Fill out the form bellow and send your question." />
     <ContactHero />
     <ContactForm />
   </Layout>

@@ -11,7 +11,7 @@ import Papers from '../components/about/Papers'
 function AboutPage() {
   return (
     <Layout>
-      <Seo title="Biography" />
+      <Seo title="Biography" description="A teacher, a researcher and a public speaker. PhD in Philosophy of Language from the University of Nebraska-Lincoln." />
       <AboutHero />
       <Background />
       <Education />

@@ -11,7 +11,7 @@ import Playlist from "../components/media/Playlist"
 const MediaPage = () => {
   return (
     <Layout>
-      <Seo title="Media" />
+      <Seo title="Media" description="Dr. Abla Hasan YouTube channel, articles, podcasts, and featured videos." />
       <MediaHero />
       <Playlist />
       <YouTubeChannel />

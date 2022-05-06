@@ -7,7 +7,7 @@ import Books from '../components/books/Books'
 function BooksPage() {
   return (
     <Layout>
-      <Seo title="Books" />
+      <Seo title="Books" description="Abla Hasan is an author of 'On Pain and Suffering, A Qur’anic Perspective', and 'Decoding the Egalitarianism of the Qur'an'." />
       <BooksHero />
       <Books />
     </Layout>

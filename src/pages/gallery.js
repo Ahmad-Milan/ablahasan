@@ -7,7 +7,7 @@ import Seo from "../components/shared/seo"
 function GalleryPage() {
   return (
     <Layout>
-      <Seo title="Books" />
+      <Seo title="Gallery" description="Photo gallery | Events, activities, lectures, classrooms, students, conferences, UNL Arabic Program, and more..." />
       <GalleryHero />
       <Gallery />
     </Layout>

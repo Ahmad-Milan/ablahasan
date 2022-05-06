@@ -5,7 +5,7 @@ import Seo from "../components/shared/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Home" description="Dr. Abla Hasan | Associate Prof of practice of Arabic language and culture | Nebraska University" />
     <HomeHero />
   </Layout>
 )
