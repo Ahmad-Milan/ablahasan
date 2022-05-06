@@ -33,13 +33,13 @@ function Awards() {
             <ListGroup.Item><GoPrimitiveDot /> Grant from University of Michigan. Mellon Foundation Digital Islamic Studies Curriculum project (DISC), spring, 2019. $15,843</ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> ENHANCE College of Arts and sciences award for research, scholarship, and creative activities, spring 2018.$5000</ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> Grant from University of Michigan. Mellon Foundation Digital Islamic Studies Curriculum project (DISC), spring, 2018.$10,000</ListGroup.Item>
-            <ListGroup.Item><GoPrimitiveDot /> UNL peer review project fellowship, faculty development program, 2016-2017. $1000. <a href="https://digitalcommons.unl.edu/prtunl/30" target="_blank" rel="noreferrer">A link to the project portfolio</a></ListGroup.Item>
+            <ListGroup.Item><GoPrimitiveDot /> UNL peer review project fellowship, faculty development program, 2016-2017. $1000. <a href="https://digitalcommons.unl.edu/prtunl/30" className="text-gray-blue" target="_blank" rel="noreferrer">A link to the project portfolio</a></ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> UNL Certificate of recognition for contributions to students, UNL parents association, 2017. </ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> UNL Certificate of recognition for contributions to students, UNL parents association, 2016. </ListGroup.Item>
-            <ListGroup.Item><GoPrimitiveDot /> UNL peer review project fellowship, faculty development program, 2015-2016. $500. <a href="https://digitalcommons.unl.edu/prtunl/18/" target="_blank" rel="noreferrer">A link to the project portfolio</a></ListGroup.Item>
+            <ListGroup.Item><GoPrimitiveDot /> UNL peer review project fellowship, faculty development program, 2015-2016. $500. <a href="https://digitalcommons.unl.edu/prtunl/18/" className="text-gray-blue" target="_blank" rel="noreferrer">A link to the project portfolio</a></ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> UNL parents’ association grant to support events at UNL, spring 2015. $150</ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> UNL Convocations Committee award for funding a guest speaker, fall 2014-2015. $750</ListGroup.Item>
-            <ListGroup.Item><GoPrimitiveDot /> UNL peer review project fellowship, faculty development program, 2014-2015. $500. <a href="https://courseportfolio.org/peer/pages/index.jsp?what=portfolioObjectD&portfolioObjectId=510" target="_blank" rel="noreferrer">A link to the project portfolio</a></ListGroup.Item>
+            <ListGroup.Item><GoPrimitiveDot /> UNL peer review project fellowship, faculty development program, 2014-2015. $500. <a href="https://courseportfolio.org/peer/pages/index.jsp?what=portfolioObjectD&portfolioObjectId=510" className="text-gray-blue" target="_blank" rel="noreferrer">A link to the project portfolio</a></ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> Pennsylvania STARTALK Fellowship for teachers of Arabic: A Professional Development Program for Teachers (Arabic), STARTALK Arabic Academy at Penn State, The training was covered by a fellowship that also covered ARAB 497G, Section 601: teaching Arabic, Pennsylvania, May 21 to July 21, 2014. </ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> UNL parents association grant to support events at UNL, spring 2014. </ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> UNL Certificate of recognition for contributions to students, UNL parents association, 2013. </ListGroup.Item>
@@ -56,7 +56,7 @@ function Awards() {
         {
           !expand && <div className="gradient-up position-absolute"></div>
         }
-        <Button className="basic-btn mx-auto" onClick={handleExpand}>{expand ? 'Show less' : 'Show more'}</Button>
+        <Button className="dark-btn mx-auto" onClick={handleExpand}>{expand ? 'Show less' : 'Show more'}</Button>
       </Row>
     </Container>
   )
