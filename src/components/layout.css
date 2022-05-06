@@ -129,6 +129,12 @@ header a {
   background-position: bottom;
   background-blend-mode: multiply;
 }
+#gallery > .container {
+  max-height: 1500px;
+  overflow: scroll;
+  border-top: 12px solid var(--main-isabelline);
+  border-bottom: 12px solid var(--main-isabelline);
+}
 #gallery figure {
   max-height: 300px;
   cursor: pointer;

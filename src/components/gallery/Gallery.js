@@ -40,7 +40,7 @@ function Gallery() {
 
   return (
     <section id="gallery">
-      <Container>
+      <Container className="shadow rounded">
         <Row>
           {
             localImagesData.map((photo, x) => (
