@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { Container, Row, Col } from "react-bootstrap"
 import Underline from '../shared/Underline'
+import DownloadCV from '../shared/DownloadCV'
 
 function Background() {
   return (
@@ -25,6 +26,7 @@ function Background() {
               style={{ marginBottom: `1.45rem` }}
               className="shadow-sm rounded mt-md-5"
             />
+            <DownloadCV color="dark" />
           </div>
         </Col>
       </Row>
