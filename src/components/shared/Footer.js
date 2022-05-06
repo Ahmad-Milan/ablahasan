@@ -23,7 +23,7 @@ function Footer() {
             <a href="https://www.facebook.com/UNLArabic/" rel="noreferrer" target="_blank">UNL Arabic Facebook Page</a>
           </Col>
           <Col className="mb-4 text-center" md={6} lg={4}>
-            <DownloadCV btnType="form" />
+            <DownloadCV color="light" />
           </Col>
         </Row>
         <Row className="mt-4">
