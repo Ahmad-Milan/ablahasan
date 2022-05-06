@@ -37,7 +37,7 @@ function Papers() {
         {
           !expand && <div className="gradient-up position-absolute"></div>
         }
-        <Button className="basic-btn mx-auto" onClick={handleExpand}>{expand ? 'Show less' : 'Show more'}</Button>
+        <Button className="dark-btn mx-auto" onClick={handleExpand}>{expand ? 'Show less' : 'Show more'}</Button>
       </Row>
     </Container>
   )
