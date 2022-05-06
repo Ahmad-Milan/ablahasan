@@ -11,7 +11,7 @@ const Header = ({siteTitle}) => {
         <Row>
           <div className="w-auto mx-auto">
             <StaticImage
-              src="../images/logo.png"
+              src="../../images/logo.png"
               width={200}
               quality={95}
               formats={["auto", "webp"]}
