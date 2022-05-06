@@ -26,7 +26,7 @@ const Header = ({siteTitle}) => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto py-1">
               <Link activeClassName="active-link" className="nav-link" to="/">HOME</Link>
-              <Link activeClassName="active-link" className="nav-link" to="/about/">ABOUT</Link>
+              <Link activeClassName="active-link" className="nav-link" to="/about/">ABOUT / CV</Link>
               <Link activeClassName="active-link" className="nav-link" to="/books/">BOOKS</Link>
               <Link activeClassName="active-link" className="nav-link" to="/media/">MEDIA</Link>
               <Link activeClassName="active-link" className="nav-link" to="/gallery/">GALLERY</Link>
