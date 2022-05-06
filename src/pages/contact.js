@@ -3,7 +3,7 @@ import ContactHero from '../components/contact/ContactHero'
 import ContactForm from '../components/contact/Form'
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Seo from "../components/shared/seo"
 
 const ContactPage = () => (
   <Layout>
