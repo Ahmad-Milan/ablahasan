@@ -20,10 +20,6 @@ header a {
   text-decoration: none !important;
   color: var(--main-black-olive);
 }
-
-.about-sec-01 p {
-  line-height: 2rem;
-}
 .active-link {
   color: var(--main-gray-blue) !important;
 }
@@ -45,16 +41,27 @@ header a {
   min-height: 500px;
   background-size: cover;
 }
-.basic-btn, .basic-btn:hover, .basic-btn:focus {
+.dark-btn, .dark-btn:hover, .dark-btn:focus {
   max-width: 250px;
   background-color: var(--main-gray-blue);
   border-color: var(--main-gray-blue);
   color: var(--main-isabelline);
 }
-.basic-btn:disabled {
+.dark-btn:disabled {
   cursor: not-allowed;
   color: var(--main-light-gray);
   opacity: .8;
+}
+.light-btn, .light-btn:hover, .light-btn:focus {
+  max-width: 250px;
+  background-color: var(--main-isabelline);
+  border-color: var(--main-isabelline);
+  color: var(--main-gray-blue);
+}
+.light-btn:disabled {
+  cursor: not-allowed;
+  opacity: .8;
+  color: var(--main-text-color);
 }
 .gradient-up {
   height: 130px;
@@ -170,14 +177,14 @@ form label sup svg {
 #contact-form .card {
   background-color: rgba(54, 79, 107, .8);
 }
-.form-btn, .form-btn:hover, .form-btn:focus {
-  max-width: 250px;
-  background-color: var(--main-isabelline);
-  border-color: var(--main-isabelline);
-  color: var(--main-gray-blue);
+footer {
+  min-height: 200px;
+  background-color: var(--main-gray-blue);
+  color: var(--main-isabelline);
 }
-.form-btn:disabled {
-  cursor: not-allowed;
-  opacity: .8;
-  color: var(--main-text-color);
+footer a, footer a:hover {
+  text-decoration: none;
+  color: var(--main-isabelline);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--main-quick-silver);
 }
