@@ -4,7 +4,7 @@ import DownloadCV from './DownloadCV'
 
 function Footer() {
   return (
-    <footer className="mt-4 py-5">
+    <footer className="mt-5 py-5">
       <Container>
         <Row>
           <Col className="mb-4 text-center" md={6} lg={4}>
