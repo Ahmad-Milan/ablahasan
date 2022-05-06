@@ -24,6 +24,7 @@ function Gallery() {
               )
             }
             relativePath
+            publicURL
           }
         }
       }
