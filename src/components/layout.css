@@ -168,13 +168,13 @@ header a {
 
 /* Contact Page */
 .contact-hero {
-  background-image: url('../images/Abla-Hasan-03.webp');  /* fallback */
+  background-image: url('../images/personal/Abla-Hasan-03.webp');  /* fallback */
   background-color: var(--main-isabelline);
   background-position: top right;
   background-blend-mode: multiply;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('../images/Abla-Hasan-03.webp'), linear-gradient(to top right, #F2F1EF, rgba(54, 79, 107, .4), rgba(54, 79, 107, .5));
+  background-image: url('../images/personal/Abla-Hasan-03.webp'), linear-gradient(to top right, #F2F1EF, rgba(54, 79, 107, .4), rgba(54, 79, 107, .5));
 }
 #contact-form h1, #contact-form .success p, form label {
   color: var(--main-isabelline);

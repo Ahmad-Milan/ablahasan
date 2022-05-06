@@ -16,7 +16,7 @@ function HomeHero() {
         <Col lg={6}>
           <div className="text-center">
             <StaticImage
-              src="../../images/abla-hasan-02.jpg"
+              src="../../images/personal/abla-hasan-02.jpg"
               width={500}
               quality={95}
               formats={["auto", "webp"]}

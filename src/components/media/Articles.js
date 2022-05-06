@@ -154,7 +154,7 @@ function Articles() {
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
                 <StaticImage
-                  src="../../images/Abla-Hasan-03.webp"
+                  src="../../images/personal/family.webp"
                   quality={95}
                   formats={["auto", "webp"]}
                   alt="The Big Arabic Day"

@@ -18,7 +18,7 @@ function Background() {
         <Col md={6}>
           <div className="text-center mt-md-5 mb-4">
             <StaticImage
-              src="../../images/abla-hasan-01.webp"
+              src="../../images/personal/abla-hasan-01.webp"
               width={550}
               quality={95}
               formats={["auto", "webp"]}

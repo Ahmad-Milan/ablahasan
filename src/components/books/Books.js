@@ -32,7 +32,7 @@ function Books() {
             <div>
               <a href="https://www.amazon.com/Pain-Suffering-Perspective-Lexington-Classical/dp/1793650055" target="_blank" rel="noreferrer">
                 <StaticImage
-                  src="../../images/amazon-btn.png"
+                  src="../../images/books/amazon-btn.png"
                   width={200}
                   quality={95}
                   formats={["auto", "webp"]}
@@ -205,7 +205,7 @@ function Books() {
             <div>
               <a href="https://www.amazon.com/Decoding-Egalitarianism-Quran-Retrieving-Lexington/dp/1793609896" target="_blank" rel="noreferrer">
                 <StaticImage
-                  src="../../images/amazon-btn.png"
+                  src="../../images/books/amazon-btn.png"
                   width={200}
                   quality={95}
                   formats={["auto", "webp"]}
