@@ -182,7 +182,7 @@ footer {
   background-color: var(--main-gray-blue);
   color: var(--main-isabelline);
 }
-footer a, footer a:hover {
+footer a, footer a:hover:not(.btn) {
   text-decoration: none;
   color: var(--main-isabelline);
   padding-bottom: 10px;
