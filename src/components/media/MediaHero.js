@@ -7,7 +7,7 @@ function MediaHero() {
       <Container>
         <Row>
           <Col>
-            <h1 className="fw-normal display-4 text-gray-blue mb-5 pb-md-2">Media</h1>
+            <h1 className="fw-bold display-4 text-gray-blue text-shadow mb-5 pb-md-2">Media</h1>
           </Col>
         </Row>
       </Container>
