@@ -7,7 +7,7 @@ module.exports = {
     title: `Dr. Abla Hasan`,
     description: `Associate Prof of practice of Arabic language and culture | Nebraska University.`,
     author: `Dr. Abla Hasan`,
-    siteUrl: `https://ablahasan.org/`,
+    siteUrl: `https://ablahasan.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
