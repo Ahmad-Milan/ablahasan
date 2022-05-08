@@ -10,7 +10,7 @@ function Talks() {
     setExpand(!expand)
   }
   return (
-    <Container className="pt-5 mt-md-3 courses">
+    <Container className="pt-5 mt-md-3 talks">
       <h3 className="mb-0 display-6 text-gray-blue text-uppercase">Invited lectures &amp; Talks</h3>
       <Underline />
       <Row 

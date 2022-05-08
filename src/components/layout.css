@@ -86,10 +86,6 @@ header a {
   background-image: url('../images/backgrounds/feather.webp');
   background-position: bottom;
 }
-.awards .list-group-item, .courses .list-group-item {
-  background-color: transparent;
-  color: var(--main-text-color);
-}
 /* Books Page */
 .books-hero {
   background-image: url('../images/backgrounds/books-stack-bg.webp');
@@ -165,7 +161,10 @@ header a {
 #gallery-modal .gatsby-image-wrapper img{
   max-height: 600px;
 }
-
+.awards .list-group-item, .courses .list-group-item, .talks .list-group-item {
+  background-color: transparent;
+  color: var(--main-text-color);
+}
 /* Contact Page */
 .contact-hero {
   background-image: url('../images/personal/Abla-Hasan-03.webp');  /* fallback */
