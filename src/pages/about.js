@@ -7,6 +7,7 @@ import Education from '../components/about/Education'
 import Background from '../components/about/Background'
 import Courses from '../components/about/Courses'
 import Papers from '../components/about/Papers'
+import Talks from '../components/about/Talks'
 
 function AboutPage() {
   return (
@@ -18,6 +19,7 @@ function AboutPage() {
       <Awards />
       <Courses />
       <Papers />
+      <Talks />
     </Layout>
   )
 }
