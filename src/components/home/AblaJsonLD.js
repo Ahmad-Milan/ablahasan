@@ -40,7 +40,7 @@ function AblaJsonLD() {
             }
           ],
           "url": "https://ablahasan.com",
-          "image": "https://ablahasan.com/static/118e45af1e4e6bf7883a0a58a9231376/abla-hasan-01.webp",
+          "image": "https://ablahasan.com/static/118e45af1e4e6bf7883a0a58a9231376/7d855/abla-hasan-01.webp",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Lincoln",
