@@ -7,11 +7,17 @@ module.exports = {
     title: `Dr. Abla Hasan`,
     description: `Associate Prof of practice of Arabic language and culture | Nebraska University.`,
     author: `Dr. Abla Hasan`,
-    siteUrl: `https://ablahasan.com/`,
+    siteUrl: `https://ablahasan.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://ablahasan.com`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -35,6 +41,7 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
