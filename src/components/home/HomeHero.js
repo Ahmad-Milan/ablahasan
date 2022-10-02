@@ -10,7 +10,7 @@ function HomeHero() {
           <div className="mb-4">
             <h1 className="display-3 mb-4 text-gray-blue">Dr. Abla Hasan</h1>
             <h2 className="display-6 mb-4 text">Associate Prof of Practice of Arabic Language and Culture </h2>
-            <h3 className="h2 fw-light text">- Nebraska University</h3>
+            <h3 className="h2 fw-light text">- University of Nebraska-Lincoln</h3>
           </div>
         </Col>
         <Col lg={6}>
