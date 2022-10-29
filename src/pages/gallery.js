@@ -2,7 +2,7 @@ import React from 'react'
 import Gallery from '../components/gallery/Gallery'
 import GalleryHero from '../components/gallery/GalleryHero'
 import Layout from "../components/layout"
-import Seo from "../components/shared/Seo"
+import Seo from "../components/shared/seo"
 
 function GalleryPage() {
   return (

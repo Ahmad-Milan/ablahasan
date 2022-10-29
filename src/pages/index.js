@@ -1,7 +1,7 @@
 import * as React from "react"
 import HomeHero from "../components/home/HomeHero"
 import Layout from "../components/layout"
-import Seo from "../components/shared/Seo"
+import Seo from "../components/shared/seo"
 import AblaJsonLD from '../components/home/AblaJsonLD'
 
 const IndexPage = () => (

@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ABLA_HASAN from '../../images/personal/abla-hasan-02.jpg'
 
-export function Seo({ origin, location, title, description, children }) {
+function Seo({ origin, location, title, description, children }) {
   const { site } = useStaticQuery(
     graphql`
       query {

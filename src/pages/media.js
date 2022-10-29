@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/shared/Seo"
+import Seo from "../components/shared/seo"
 import MediaHero from "../components/media/MediaHero"
 import YouTubeChannel from "../components/media/YouTubeChannel"
 import Articles from "../components/media/Articles"
