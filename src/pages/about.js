@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from "../components/layout"
-import Seo from "../components/shared/seo"
+import Seo from "../components/shared/Seo"
 import AboutHero from '../components/about/AboutHero'
 import Awards from '../components/about/Awards'
 import Education from '../components/about/Education'
@@ -12,7 +12,6 @@ import Talks from '../components/about/Talks'
 function AboutPage() {
   return (
     <Layout>
-      <Seo title="Biography" description="A teacher, a researcher and a public speaker. PhD in Philosophy of Language from the University of Nebraska-Lincoln." />
       <AboutHero />
       <Background />
       <Education />
@@ -21,6 +20,12 @@ function AboutPage() {
       <Papers />
       <Talks />
     </Layout>
+  )
+}
+
+export const Head = ({ location }) => {
+  return (
+    <Seo location={location} title="Biography" description="A teacher, a researcher and a public speaker. PhD in Philosophy of Language from the University of Nebraska-Lincoln." />
   )
 }
 

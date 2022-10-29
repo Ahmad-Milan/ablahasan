@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/shared/seo"
+import Seo from "../components/shared/Seo"
 import MediaHero from "../components/media/MediaHero"
 import YouTubeChannel from "../components/media/YouTubeChannel"
 import Articles from "../components/media/Articles"
@@ -11,13 +11,18 @@ import Playlist from "../components/media/Playlist"
 const MediaPage = () => {
   return (
     <Layout>
-      <Seo title="Media" description="Dr. Abla Hasan YouTube channel, articles, podcasts, and featured videos." />
       <MediaHero />
       <Playlist />
       <YouTubeChannel />
       <Articles />
       <Podcasts />
     </Layout>
+  )
+}
+
+export const Head = ({ location }) => {
+  return (
+    <Seo location={location} title="Media" description="Dr. Abla Hasan YouTube channel, articles, podcasts, and featured videos." />
   )
 }
 

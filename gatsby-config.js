@@ -10,14 +10,7 @@ module.exports = {
     siteUrl: `https://ablahasan.com`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
-      options: {
-        siteUrl: `https://ablahasan.com`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
