@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from '../../static/Abla-Hasan-CV.pdf'
+import Resume from '../../static/Abla-Hasan-CV-12-22.pdf'
 import { AiOutlineDownload } from 'react-icons/ai'
 
 function DownloadCV({color}) {
