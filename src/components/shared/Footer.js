@@ -4,7 +4,7 @@ import DownloadCV from './DownloadCV'
 
 function Footer() {
   return (
-    <footer className="mt-5 py-5">
+    <footer className="mt-5 pt-5 pb-2">
       <Container>
         <Row>
           <Col className="mb-4 text-center" md={6} lg={4}>
@@ -29,6 +29,11 @@ function Footer() {
         <Row className="mt-4">
           <Col className="text-center">
             <small>Copyright &copy; {new Date().getFullYear()} Abla Hasan</small>
+          </Col>
+        </Row>
+        <Row className="mt-4">
+          <Col className="text-center">
+            <small><i>Built by <a href="https://forms.gle/1sUNE3J3ECsS2Eah7" className="text-decoration-underline border-bottom-0" target="_blank" rel="noreferrer">Ahmad S.</a></i></small>
           </Col>
         </Row>
       </Container>
