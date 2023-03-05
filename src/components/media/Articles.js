@@ -9,8 +9,34 @@ function Articles() {
       <h2 className="mb-0 display-5 text-gray-blue">Articles</h2>
       <Underline />
       <Row className="justify-content-center">
+
         <Col md={6} lg={4} className="mb-3">
-          <a href="https://www.dailynebraskan.com/news/gender-is-one-aspect-of-a-whole-identity-a-look-at-2021-gender-equity-conference/article_3f8d17e6-4359-11ec-a689-0b82942374ac.html" 
+          <a href="https://www.dailynebraskan.com/news/celebrating-success-of-arabic-language-at-lincoln-public-schools/article_583d9e1a-b94a-11ed-913a-838a0bc58df0.html"
+            rel="noreferrer" className="text-decoration-none" target="_blank">
+            <Card className="shadow-sm">
+              <figure className="text-center mb-0 overflow-hidden">
+                <StaticImage
+                  src="../../images/media/arabic-day.webp"
+                  height={265}
+                  quality={95}
+                  formats={["auto", "webp"]}
+                  alt="Celebrating success of Arabic language at Lincoln Public Schools"
+                  className="shadow-sm rounded w-100"
+                />
+              </figure>
+              <Card.Body>
+                <Card.Title>Celebrating success of Arabic language at Lincoln...</Card.Title>
+                <Card.Text className="text">
+                  Members of the community and student body gathered to celebrate the 10th year of the Arabic Studies Program at the University of Nebraska-Lincoln and discuss the future of Arabic language classes...
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </a>
+        </Col>
+
+
+        <Col md={6} lg={4} className="mb-3">
+          <a href="https://www.dailynebraskan.com/news/gender-is-one-aspect-of-a-whole-identity-a-look-at-2021-gender-equity-conference/article_3f8d17e6-4359-11ec-a689-0b82942374ac.html"
             rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
@@ -34,7 +60,7 @@ function Articles() {
         </Col>
 
         <Col md={6} lg={4} className="mb-3">
-          <a href="https://www.arabamerica.com/professor-teaches-course-on-love-in-arabic-cultures/" 
+          <a href="https://www.arabamerica.com/professor-teaches-course-on-love-in-arabic-cultures/"
             rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
@@ -57,7 +83,7 @@ function Articles() {
         </Col>
 
         <Col md={6} lg={4} className="mb-3">
-          <a href="https://www.dailynebraskan.com/news/women-in-the-qur-an-class-virtually-connects-unl-with/article_a6c75c9e-fcba-11e7-8386-c735839177dc.html" 
+          <a href="https://www.dailynebraskan.com/news/women-in-the-qur-an-class-virtually-connects-unl-with/article_a6c75c9e-fcba-11e7-8386-c735839177dc.html"
             rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
@@ -72,7 +98,7 @@ function Articles() {
               <Card.Body>
                 <Card.Title>‘Women in the Qur’an’ class virtually connects UNL with...</Card.Title>
                 <Card.Text className="text">
-                A new virtual exchange course at the University of Nebraska-Lincoln is looking to build relationships between students separated by thousands of miles, all through the lens of a...
+                  A new virtual exchange course at the University of Nebraska-Lincoln is looking to build relationships between students separated by thousands of miles, all through the lens of a...
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -80,7 +106,7 @@ function Articles() {
         </Col>
 
         <Col md={6} lg={4} className="mb-3">
-          <a href="https://nebraska.tv/news/local/hastings-church-aims-to-bridge-gap-in-religios-divide" 
+          <a href="https://nebraska.tv/news/local/hastings-church-aims-to-bridge-gap-in-religios-divide"
             rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
@@ -95,7 +121,7 @@ function Articles() {
               <Card.Body>
                 <Card.Title>Hastings church hopes to bridge gap in religious divide</Card.Title>
                 <Card.Text className="text">
-                First Presbytarian Church in Hastings, gather to hear UNL Professor, Abla Hasan PhD, speak about religious relations. Hastings College French Memorial Chapel. (NTV)...
+                  First Presbytarian Church in Hastings, gather to hear UNL Professor, Abla Hasan PhD, speak about religious relations. Hastings College French Memorial Chapel. (NTV)...
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -103,7 +129,7 @@ function Articles() {
         </Col>
 
         <Col md={6} lg={4} className="mb-3">
-          <a href="https://www.dailynebraskan.com/news/unl-s-the-big-arabic-day-emphasizes-the-realities-of-hijab/article_6bc36ac0-fca2-11e6-ae18-532bdd462eeb.html" 
+          <a href="https://www.dailynebraskan.com/news/unl-s-the-big-arabic-day-emphasizes-the-realities-of-hijab/article_6bc36ac0-fca2-11e6-ae18-532bdd462eeb.html"
             rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
@@ -118,7 +144,7 @@ function Articles() {
               <Card.Body>
                 <Card.Title>UNL’s “The Big Arabic Day” emphasizes the realities of...</Card.Title>
                 <Card.Text className="text">
-                Caryn Friesen is a born and raised Nebraskan; she grew up in Hebron, a town of less than 1,600 people. Friesen is a junior studying French, with minors in history...
+                  Caryn Friesen is a born and raised Nebraskan; she grew up in Hebron, a town of less than 1,600 people. Friesen is a junior studying French, with minors in history...
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -126,7 +152,7 @@ function Articles() {
         </Col>
 
         <Col md={6} lg={4} className="mb-3">
-          <a href="https://www.dailynebraskan.com/arts_and_entertainment/arabic-conversation-tables-connect-language-culture/article_dbdbddd4-4e8e-11e4-a465-001a4bcf6878.html" 
+          <a href="https://www.dailynebraskan.com/arts_and_entertainment/arabic-conversation-tables-connect-language-culture/article_dbdbddd4-4e8e-11e4-a465-001a4bcf6878.html"
             rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
@@ -141,7 +167,7 @@ function Articles() {
               <Card.Body>
                 <Card.Title>Arabic conversation tablbbhg connect language, culture</Card.Title>
                 <Card.Text className="text">
-                At first, Eric Curran was nervous about the idea of learning the Arabic language. He had previously graduated from Midland University in Fremont, Nebraska with...
+                  At first, Eric Curran was nervous about the idea of learning the Arabic language. He had previously graduated from Midland University in Fremont, Nebraska with...
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -149,7 +175,7 @@ function Articles() {
         </Col>
 
         <Col md={6} lg={4} className="mb-3">
-          <a href="https://manlymiles.wordpress.com/2017/03/30/unl-muslim-professor-tells-her-story/" 
+          <a href="https://manlymiles.wordpress.com/2017/03/30/unl-muslim-professor-tells-her-story/"
             rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
               <figure className="text-center mb-0 overflow-hidden">
@@ -164,7 +190,7 @@ function Articles() {
               <Card.Body>
                 <Card.Title>UNL Muslim professor tells her story</Card.Title>
                 <Card.Text className="text">
-                As a young Muslim woman in Damascus, Syria, Abla Hasan would walk down the Hamidiah Market, visiting the sweet and carved wood vendors housed in cragged...
+                  As a young Muslim woman in Damascus, Syria, Abla Hasan would walk down the Hamidiah Market, visiting the sweet and carved wood vendors housed in cragged...
                 </Card.Text>
               </Card.Body>
             </Card>
