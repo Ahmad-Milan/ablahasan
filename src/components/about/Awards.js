@@ -18,6 +18,9 @@ function Awards() {
         style={{maxHeight: expand ? 'max-content' : '400px'}}>
         <Col>
           <ListGroup variant="flush"> 
+            <ListGroup.Item><GoPrimitiveDot /> 2023 Rev. Dr. Michael Combs Award for Scholars of Equality and Justice</ListGroup.Item>
+            <ListGroup.Item><GoPrimitiveDot /> Grant from the University of Michigan. Mellon Foundation Digital Islamic Studies Curriculum project (DISC)$9,000. Spring 2023</ListGroup.Item>
+            <ListGroup.Item><GoPrimitiveDot /> Collage of Arts and Sciences Distinguished Teaching Award for 2022</ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> Grant from University of Michigan. Mellon Foundation Digital Islamic Studies Curriculum project (DISC), fall 2022, $14,371</ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> UNL/DMLL summer student recruitment grant. $1500 “Why Arabic at UNL?” 2022</ListGroup.Item>
             <ListGroup.Item><GoPrimitiveDot /> College of Arts and Sciences Research Impact and Engagement Grant. Fall 2021. $5000</ListGroup.Item>
