@@ -31,7 +31,7 @@ function Background() {
         </Col>
       </Row>
       <Row>
-        <p className="lh-lg fs-20 text">Abla Hasan is the recipient of the College of Arts and Sciences Engagement Award for 2021, the recipient of the College of Arts and Sciences Distinguished Teaching Award for 2022 and the recipient of the 2023 Rev. Dr. Michael Combs Award for Scholars of Equality and Justice.</p>
+        <p className="lh-lg fs-20 text">Abla Hasan is the recipient of the College of Arts and Sciences Engagement Award for 2021, the recipient of the College of Arts and Sciences Distinguished Teaching Award for 2022, the recipient of the 2023 Rev. Dr. Michael Combs Award for Scholars of Equality and Justice, and the recipient of UNL's  first annual Women’s and Gender Justice Award 2023.</p>
         <p className="lh-lg fs-20 text">A teacher, a researcher and a public speaker. In addition to teaching for Nebraska University, Hasan’s course “Women in the Qur’an” was offered to Maryland University, Rutgers University, Penn State University (Though DISC) and to Nizwa University in Oman (through Nebraska’s Global Virtual Project). Dr. Hasan’s scholar engagement includes numerous national and international paper presentations including 50 invited talks and more than 40 media interviews and citations. </p>
       </Row>
     </Container>
