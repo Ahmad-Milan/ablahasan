@@ -11,7 +11,7 @@ function Gallery() {
   const [activeIndex, setActiveIndex] = React.useState(0)
   const localImagesData = useStaticQuery(graphql`
     query localImages {
-      allFile(filter: {relativeDirectory: {eq: "gallery"}})  {
+      allFile(filter: {relativeDirectory: {eq: "gallery"}}, sort: {atimeMs: DESC})  {
         edges {
           node {
             base
