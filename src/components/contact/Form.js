@@ -9,6 +9,8 @@ import { FaAsterisk } from 'react-icons/fa'
 import ReCAPTCHA from "react-google-recaptcha";
 import FormWrapper from "./FormWrapper";
 
+const CORS_PATH = 'https://milan-cors-2023-9de078d0fd3b.herokuapp.com/'
+
 function ContactForm () {
   const form = useRef()
   const [success, setSuccess] = useState(false)
@@ -26,7 +28,7 @@ function ContactForm () {
 
   async function validateHuman(token) {
     const secret = process.env.GATSBY_RECAPTCHA_SECRET_KEY
-    const response = await fetch(`https://cors-milanlaser.herokuapp.com/https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`, {
+    const response = await fetch(`${CORS_PATH}https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`, {
       method: "POST",
     })
     const recaptchaData = await response.json()
