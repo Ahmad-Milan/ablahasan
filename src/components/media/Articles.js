@@ -11,6 +11,30 @@ function Articles() {
       <Row className="justify-content-center">
 
         <Col md={6} lg={4} className="mb-3">
+          <a href="https://www.almahdi.edu/quranworkshop"
+            rel="noreferrer" className="text-decoration-none" target="_blank">
+            <Card className="shadow-sm">
+              <figure className="text-center mb-0 overflow-hidden">
+                <StaticImage
+                  src="../../images/media/AMI-Quran-Workshop.webp"
+                  height={265}
+                  quality={95}
+                  formats={["auto", "webp"]}
+                  alt="AMI Holds Inaugural Quranic Conference"
+                  className="shadow-sm rounded w-100"
+                />
+              </figure>
+              <Card.Body>
+                <Card.Title>AMI Holds Inaugural Quranic Conference: Regulative...</Card.Title>
+                <Card.Text className="text">
+                  Al-Mahdi Institute held a two-day international academic conference, marking a new chapter in the Institute’s commitment to promoting research and scholarship in various Islamic disciplines. This event...
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </a>
+        </Col>
+
+        <Col md={6} lg={4} className="mb-3">
           <a href="https://www.dailynebraskan.com/news/celebrating-success-of-arabic-language-at-lincoln-public-schools/article_583d9e1a-b94a-11ed-913a-838a0bc58df0.html"
             rel="noreferrer" className="text-decoration-none" target="_blank">
             <Card className="shadow-sm">
