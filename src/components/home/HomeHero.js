@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -9,8 +9,12 @@ function HomeHero() {
         <Col lg={6}>
           <div className="mb-4">
             <h1 className="display-3 mb-4 text-gray-blue">Dr. Abla Hasan</h1>
-            <h2 className="display-6 mb-4 text">Associate Prof of Practice of Arabic Language and Culture </h2>
-            <h3 className="h2 fw-light text">- University of Nebraska-Lincoln</h3>
+            <h2 className="display-6 mb-4 text">
+              Professor of Practice of Arabic Language and Culture{" "}
+            </h2>
+            <h3 className="h2 fw-light text">
+              - University of Nebraska-Lincoln
+            </h3>
           </div>
         </Col>
         <Col lg={6}>

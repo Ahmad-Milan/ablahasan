@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Dr. Abla Hasan`,
-    description: `Associate Prof of practice of Arabic language and culture | Nebraska University.`,
+    description: `Professor of practice of Arabic language and culture | Nebraska University.`,
     author: `Dr. Abla Hasan`,
     siteUrl: `https://ablahasan.com`,
   },
