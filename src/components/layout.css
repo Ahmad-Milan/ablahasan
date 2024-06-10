@@ -81,6 +81,9 @@ header a {
 .text-shadow {
   text-shadow: 1px 1px var(--main-light-gray);
 }
+.resume-btn > a {
+  width: 182px;
+}
 /* Biography Page */
 .biography-hero {
   background-image: url('../images/backgrounds/feather.webp');
