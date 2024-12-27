@@ -1,16 +1,16 @@
 :root {
-  --main-isabelline: #F2F1EF;
-  --main-quick-silver: #B1A6A4;
+  --main-isabelline: #f2f1ef;
+  --main-quick-silver: #b1a6a4;
   --main-gray-blue: #364f6b;
-  --main-light-gray: #D8CFD0;
-  --main-black-olive: #413F3D;
+  --main-light-blue: #d2ddea;
+  --main-black-olive: #413f3d;
   --main-text-color: #747474;
 }
 html {
   margin: 0;
 }
 body {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   margin: 0;
   background-color: var(--main-isabelline);
@@ -27,7 +27,7 @@ header a {
   font-size: 20px;
 }
 .underline > div {
-  border-bottom: 4px solid var(--main-light-gray);
+  border-bottom: 4px solid var(--main-light-blue);
   max-width: 200px;
   width: 50%;
 }
@@ -41,7 +41,9 @@ header a {
   min-height: 500px;
   background-size: cover;
 }
-.dark-btn, .dark-btn:hover, .dark-btn:focus {
+.dark-btn,
+.dark-btn:hover,
+.dark-btn:focus {
   max-width: 250px;
   background-color: var(--main-gray-blue);
   border-color: var(--main-gray-blue);
@@ -49,10 +51,12 @@ header a {
 }
 .dark-btn:disabled {
   cursor: not-allowed;
-  color: var(--main-light-gray);
-  opacity: .8;
+  color: var(--main-light-blue);
+  opacity: 0.8;
 }
-.light-btn, .light-btn:hover, .light-btn:focus {
+.light-btn,
+.light-btn:hover,
+.light-btn:focus {
   max-width: 250px;
   background-color: var(--main-isabelline);
   border-color: var(--main-isabelline);
@@ -60,17 +64,25 @@ header a {
 }
 .light-btn:disabled {
   cursor: not-allowed;
-  opacity: .8;
+  opacity: 0.8;
   color: var(--main-text-color);
 }
 .gradient-up {
   height: 130px;
-  background-image: linear-gradient(to bottom, #F2F1EF, rgba(242, 241, 239, .5));
-  background: -webkit-linear-gradient(bottom, #F2F1EF, rgba(242, 241, 239, .5));
+  background-image: linear-gradient(
+    to bottom,
+    #f2f1ef,
+    rgba(242, 241, 239, 0.5)
+  );
+  background: -webkit-linear-gradient(
+    bottom,
+    #f2f1ef,
+    rgba(242, 241, 239, 0.5)
+  );
   bottom: 40px;
 }
 .card {
-  background-color: var(--main-light-gray);
+  background-color: var(--main-light-blue);
   border: none;
   overflow: hidden;
   min-height: 446px;
@@ -79,23 +91,23 @@ header a {
   color: var(--main-gray-blue);
 }
 .text-shadow {
-  text-shadow: 1px 1px var(--main-light-gray);
+  text-shadow: 1px 1px var(--main-light-blue);
 }
 .resume-btn > a {
   width: 182px;
 }
 /* Biography Page */
 .biography-hero {
-  background-image: url('../images/backgrounds/feather.webp');
+  background-image: url("../images/backgrounds/feather.webp");
   background-position: bottom;
 }
 /* Books Page */
 .books-hero {
-  background-image: url('../images/backgrounds/books-stack-bg.webp');
+  background-image: url("../images/backgrounds/books-stack-bg.webp");
   background-position: bottom;
 }
 .book-reviews {
-  background-color: var(--main-light-gray);
+  background-color: var(--main-light-blue);
   min-height: 394px;
 }
 .book-reviews .gatsby-image-wrapper img {
@@ -103,7 +115,7 @@ header a {
 }
 /* Media Page */
 .media-hero {
-  background-image: url('../images/backgrounds/media-hero-bg.webp');
+  background-image: url("../images/backgrounds/media-hero-bg.webp");
   background-position: top;
 }
 .page-link {
@@ -117,10 +129,10 @@ header a {
 #articles .card figure {
   max-height: 220px;
 }
-#articles .card{
+#articles .card {
   min-height: 405px;
 }
-#podcasts .card{
+#podcasts .card {
   min-height: 425px;
 }
 
@@ -131,7 +143,7 @@ header a {
 
 /* Gallery Page */
 .gallery-hero {
-  background-image: url('../images/backgrounds/film-negative.webp');
+  background-image: url("../images/backgrounds/film-negative.webp");
   background-color: var(--main-isabelline);
   background-position: bottom;
   background-blend-mode: multiply;
@@ -148,10 +160,10 @@ header a {
 }
 #gallery figure .zoom {
   color: var(--main-isabelline);
-  background-color: rgba(216, 207, 208, .4);
+  background-color: rgba(216, 207, 208, 0.4);
   left: -100%;
   bottom: -100%;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 #gallery figure:hover > .zoom {
   left: 0;
@@ -161,29 +173,40 @@ header a {
   background-color: var(--main-isabelline);
   color: var(--main-gray-blue);
 }
-#gallery-modal .carousel-control-next-icon, #gallery-modal .carousel-control-prev-icon{
+#gallery-modal .carousel-control-next-icon,
+#gallery-modal .carousel-control-prev-icon {
   background-color: var(--main-black-olive);
   width: 3rem;
   height: 3rem;
 }
-#gallery-modal .gatsby-image-wrapper img{
+#gallery-modal .gatsby-image-wrapper img {
   max-height: 600px;
 }
-.awards .list-group-item, .courses .list-group-item, .talks .list-group-item {
+.awards .list-group-item,
+.courses .list-group-item,
+.talks .list-group-item {
   background-color: transparent;
   color: var(--main-text-color);
 }
 /* Contact Page */
 .contact-hero {
-  background-image: url('../images/personal/Abla-Hasan-03.webp');  /* fallback */
+  background-image: url("../images/personal/Abla-Hasan-03.webp"); /* fallback */
   background-color: var(--main-isabelline);
   background-position: top right;
   background-blend-mode: multiply;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('../images/personal/Abla-Hasan-03.webp'), linear-gradient(to top right, #F2F1EF, rgba(54, 79, 107, .4), rgba(54, 79, 107, .5));
+  background-image: url("../images/personal/Abla-Hasan-03.webp"),
+    linear-gradient(
+      to top right,
+      #f2f1ef,
+      rgba(54, 79, 107, 0.4),
+      rgba(54, 79, 107, 0.5)
+    );
 }
-#contact-form h1, #contact-form .success p, form label {
+#contact-form h1,
+#contact-form .success p,
+form label {
   color: var(--main-isabelline);
 }
 form label sup svg {
@@ -191,14 +214,15 @@ form label sup svg {
   color: red;
 }
 #contact-form .card {
-  background-color: rgba(54, 79, 107, .8);
+  background-color: rgba(54, 79, 107, 0.8);
 }
 footer {
   min-height: 200px;
   background-color: var(--main-gray-blue);
   color: var(--main-isabelline);
 }
-footer a, footer a:hover:not(.btn) {
+footer a,
+footer a:hover:not(.btn) {
   text-decoration: none;
   color: var(--main-isabelline);
   padding-bottom: 10px;
@@ -209,7 +233,7 @@ footer a, footer a:hover:not(.btn) {
     background-color: var(--main-gray-blue);
     padding-right: 5px;
     padding-left: 5px;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     margin-top: 10px;
   }
   nav.navbar-light .navbar-nav .nav-link {
@@ -217,10 +241,11 @@ footer a, footer a:hover:not(.btn) {
     padding-right: 15px;
     padding-left: 15px;
   }
-  nav .active-link, nav .nav-link:hover {
+  nav .active-link,
+  nav .nav-link:hover {
     color: var(--main-black-olive) !important;
-    background-color: rgba(242, 241, 239, .5);
-    border-radius: .3rem;
+    background-color: rgba(242, 241, 239, 0.5);
+    border-radius: 0.3rem;
   }
   .navbar-light .navbar-toggler {
     border-color: var(--main-black-olive);
@@ -232,10 +257,10 @@ footer a, footer a:hover:not(.btn) {
     max-height: 2500px;
   }
   .biography-hero {
-    background-image: url('../images/backgrounds/feather-sm.webp');
+    background-image: url("../images/backgrounds/feather-sm.webp");
   }
   .media-hero {
-    background-image: url('../images/backgrounds/media-hero-bg-sm.webp');
+    background-image: url("../images/backgrounds/media-hero-bg-sm.webp");
     background-position: bottom;
   }
   .contact-hero {
