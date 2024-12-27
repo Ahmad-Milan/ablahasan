@@ -1,0 +1,15 @@
+.post-wrapper .card {
+  background-color: var(--main-isabelline) !important;
+}
+.post-wrapper blockquote {
+  background-color: var(--main-light-blue);
+  border-right: 2px solid var(--main-black-olive) !important;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+}
+
+.blog-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}

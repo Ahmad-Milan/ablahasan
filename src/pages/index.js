@@ -11,6 +11,8 @@ const IndexPage = () => (
   </Layout>
 )
 
+export default IndexPage
+
 export const Head = ({ location }) => {
   return (
     <Seo
@@ -20,5 +22,3 @@ export const Head = ({ location }) => {
     />
   )
 }
-
-export default IndexPage
