@@ -7,7 +7,6 @@ import Articles from "../components/media/Articles"
 import Podcasts from "../components/media/Podcasts"
 import Playlist from "../components/media/Playlist"
 
-
 const MediaPage = () => {
   return (
     <Layout>
@@ -20,10 +19,14 @@ const MediaPage = () => {
   )
 }
 
+export default MediaPage
+
 export const Head = ({ location }) => {
   return (
-    <Seo location={location} title="Media" description="Dr. Abla Hasan YouTube channel, articles, podcasts, and featured videos." />
+    <Seo
+      location={location}
+      title="Media"
+      description="Dr. Abla Hasan YouTube channel, articles, podcasts, and featured videos."
+    />
   )
 }
-
-export default MediaPage
